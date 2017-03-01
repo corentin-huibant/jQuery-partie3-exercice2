@@ -6,19 +6,19 @@
     <title>jQuery : exercice 2 - partie 3</title>
   </head>
   <body>
-    <span>Vous avez cliquez : </span><span id="number">0</span><span> fois</span>
+    <input type="text" name="input" value="">
     <br>
     <button type="button" name="button" id="plus">+</button>
     <button type="button" name="button" id="minus">-</button>
     <script>
-      var number = 0;
-      $('#plus').click(function() {
-        number++;
-        $('#number').text(number);
+      var number = 0; //déclaration de ma variable
+      $('#plus').click(function() { //sur le clique du boutton #plus...
+        number++; // incrémentation de ma variable number
+        $('input').val(number);
       })
-      $('#minus').click(function() {
-        number--;
-        $('#number').text(number);
+      $('#minus').click(function() { //sur le clique du boutton #minus...
+        number--; //décrémentation de ma variable number
+        $('input').val(number);
       })
     </script>
   </body>
