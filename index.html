@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-2.2.4.js"></script>
+    <title>jQuery : exercice 2 - partie 3</title>
+  </head>
+  <body>
+    <span>Vous avez cliquez : </span><span id="number">0</span><span> fois</span>
+    <br>
+    <button type="button" name="button" id="plus">+</button>
+    <button type="button" name="button" id="minus">-</button>
+    <script>
+      var number = 0;
+      $('#plus').click(function() {
+        number++;
+        $('#number').text(number);
+      })
+      $('#minus').click(function() {
+        number--;
+        $('#number').text(number);
+      })
+    </script>
+  </body>
+</html>
